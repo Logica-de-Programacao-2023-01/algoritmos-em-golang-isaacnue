@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+    var numero int
+
+    // Leitura do número inteiro
+    fmt.Print("Digite um número inteiro: ")
+    fmt.Scanln(&numero)
+
+    // Cálculo do sucessor e antecessor
+    antecessor := numero - 1
+    sucessor := numero + 1
+
+    // Exibição dos resultados
+    fmt.Println("O antecessor do número é:", antecessor)
+    fmt.Println("O sucessor do número é:", sucessor)
+}
