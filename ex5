@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+    var idadeAnos int
+
+    // Leitura da idade em anos
+    fmt.Print("Digite a idade em anos: ")
+    fmt.Scanln(&idadeAnos)
+
+    // Cálculo da idade em dias
+    idadeDias := idadeAnos * 365
+
+    // Exibição do resultado
+    fmt.Println("A idade em dias é:", idadeDias)
+}
