@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+    var numero int
+
+    // Leitura do número inteiro
+    fmt.Print("Digite um número inteiro: ")
+    fmt.Scanln(&numero)
+
+    // Cálculo do dobro, triplo e quadruplo
+    dobro := numero * 2
+    triplo := numero * 3
+    quadruplo := numero * 4
+
+    // Exibição dos resultados
+    fmt.Println("O dobro do número é:", dobro)
+    fmt.Println("O triplo do número é:", triplo)
+    fmt.Println("O quadruplo do número é:", quadruplo)
+}
