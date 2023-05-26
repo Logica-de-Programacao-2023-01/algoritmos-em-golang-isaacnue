@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+    var numero1, numero2, numero3 int
+
+    // Leitura dos três números inteiros
+    fmt.Print("Digite o primeiro número inteiro: ")
+    fmt.Scanln(&numero1)
+    fmt.Print("Digite o segundo número inteiro: ")
+    fmt.Scanln(&numero2)
+    fmt.Print("Digite o terceiro número inteiro: ")
+    fmt.Scanln(&numero3)
+
+    // Calcula a soma dos três números
+    soma := numero1 + numero2 + numero3
+
+    // Exibe o resultado da soma
+    fmt.Println("A soma dos três números é:", soma)
+}
