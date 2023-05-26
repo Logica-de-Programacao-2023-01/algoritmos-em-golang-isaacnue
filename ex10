@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+    var pesoKilos float64
+
+    // Leitura do peso em quilos
+    fmt.Print("Digite o peso em quilos: ")
+    fmt.Scanln(&pesoKilos)
+
+    // Conversão para libras
+    pesoLibras := pesoKilos * 2.20462
+
+    // Exibição do resultado
+    fmt.Printf("O peso em libras é: %.2f\n", pesoLibras)
+}
