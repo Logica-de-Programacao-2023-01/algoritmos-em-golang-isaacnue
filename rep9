@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+
+func main() {
+    var num, soma, count int
+
+    for {
+        fmt.Print("Digite um número (0 para sair): ")
+        fmt.Scanln(&num)
+
+        if num == 0 {
+            break
+        }
+
+        soma += num
+        count++
+    }
+
+    if count > 0 {
+        media := float64(soma) / float64(count)
+        fmt.Printf("Média: %.2f\n", media)
+    } else {
+        fmt.Println("Nenhum número foi inserido.")
+    }
+}
