@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func main() {
+    var precoProduto float64
+
+    // Leitura do preço do produto
+    fmt.Print("Digite o preço do produto: ")
+    fmt.Scanln(&precoProduto)
+
+    // Cálculo do valor com desconto de 10%
+    desconto := precoProduto * 0.1
+    valorComDesconto := precoProduto - desconto
+
+    // Exibição do resultado
+    fmt.Printf("O valor com desconto é: R$ %.2f\n", valorComDesconto)
+}
