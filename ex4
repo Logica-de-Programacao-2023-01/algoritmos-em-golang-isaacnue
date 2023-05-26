@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+    var numero1, numero2, numero3 float64
+
+    // Leitura dos três números reais
+    fmt.Print("Digite o primeiro número real: ")
+    fmt.Scanln(&numero1)
+    fmt.Print("Digite o segundo número real: ")
+    fmt.Scanln(&numero2)
+    fmt.Print("Digite o terceiro número real: ")
+    fmt.Scanln(&numero3)
+
+    // Cálculo da média ponderada
+    mediaPonderada := (numero1*2 + numero2*3 + numero3*5) / 10
+
+    // Exibição do resultado
+    fmt.Printf("A média ponderada é: %.2f\n", mediaPonderada)
+}
